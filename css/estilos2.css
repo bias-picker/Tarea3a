@@ -1,0 +1,77 @@
+.contenedor
+{
+    background-color: antiquewhite;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: "header    header    header"
+                         "nav       nav       nav"
+                         "section1  section2  ads"
+                         "foot      foot      foot"
+                         "rrss1     rrss2     rrss3";
+ 
+}
+.contenedor .header
+{
+    background-color: yellow;
+    grid-area: header;
+}
+.contenedor .nav
+{
+    background-color: bisque;
+    grid-area: nav;
+}
+
+.contenedor .ads
+{
+    background-color: rgb(207, 255, 205);
+    grid-area: ads;
+}
+.contenedor .foot
+{
+    background-color: chartreuse;
+    grid-area: foot;
+}
+.contenedor .rrss1
+{
+    background-color: darkcyan;
+    grid-column: rrss1;
+}
+
+.contenedor .rrss2
+{
+    background-color: darkcyan;
+    grid-column: rrss2;
+}
+
+.contenedor .rrss3
+{
+    background-color: darkcyan;
+    grid-column: rrss3;
+}
+
+.contenedor .section1
+{
+    background-color: brown;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  
+}
+.contenedor .section2
+{
+    background-color: rgb(131, 37, 37);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-content: center;
+   
+}
+.contenedor .ads .hijo
+{
+    background-color: skyblue;
+}
+
+
